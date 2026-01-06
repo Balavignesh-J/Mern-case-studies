@@ -5,8 +5,13 @@ function App() {
 
   return (
     <>
-      <h1>Hi</h1>
-      <BudgetTracker />
+      <BudgetTracker
+        rates={{
+          USD: 1,
+          EUR: 0.92,
+          INR: 90,
+        }}
+      />
     </>
   )
 }
