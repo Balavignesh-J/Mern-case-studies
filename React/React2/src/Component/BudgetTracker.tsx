@@ -23,8 +23,9 @@ function transactionReducer(state:Transaction[],action:TransactionAction):Transa
   }
 }
 
-const BudgetTracker = () => {
-const [transactions, dispatch] = useReducer(transactionReducer, []);  const [amount, setamount] = useState<number>(0);
+  const BudgetTracker = () => {
+  const [transactions, dispatch] = useReducer(transactionReducer, []);  
+  const [amount, setamount] = useState<number>(0);
   const [currency, setcurrency] = useState<Currency>("USD");
   const [type, setType] = useState<TransactionType>("income");
 
