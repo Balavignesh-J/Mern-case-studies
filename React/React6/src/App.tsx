@@ -1,6 +1,11 @@
+import { NotificationsPanel } from "./NotificationsPanel"
+
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <h1>DesignHub</h1>
+      <NotificationsPanel />
+    </>
   )
 }
 
